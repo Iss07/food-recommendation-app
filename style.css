@@ -1,0 +1,303 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#loading{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: url('./Pizza spinning.gif') no-repeat;
+  background-size: contain; /* Adjust the background size as needed */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background-size: ;
+}
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  font-family: sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(./img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: rgb(10, 8, 8);
+  background-attachment: fixed;
+  backdrop-filter:blur(3px);
+
+}
+.search-btun img{
+  height: 20px;
+  width: 20px;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+
+}
+.search-btun{
+  background-color: yellow;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  width: 30px;
+  border: 1px solid yellow;
+  transition: all 0.4s linear;
+}
+.my-btn{
+  height: 30px;
+  align-items: center;
+  width: 100%;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  font-size: 1rem;
+  font-family: inherit; 
+  padding: 10px;
+  border: 1px solid yellow;
+  width: 35rem;
+  justify-content: center;
+  margin: auto;
+
+}
+.my-btn::placeholder{
+  color:yellow;
+  text-align: center;
+  
+}
+.search {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 30rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  
+}
+.container{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 1280px;
+  margin-bottom: 20px;
+  
+}
+.meal-result{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.meal-name{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container h1 {
+  margin-bottom: 20px; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container blockquote {
+  margin-top: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.my-btun:hover{
+  background: rgb(25, 25, 18);
+}
+.meal-result{
+  margin-top: 0.5rem;
+}
+#meal{
+  margin: 1.5rem; 
+   display: flex;
+  
+}
+.meal-item{
+  border-radius: 1rem 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meal-img img{
+  padding: 25px;
+  width: 100%;
+  display: block;
+  height: 300px;
+  width: 300px;
+  border-radius: 3rem;
+ 
+}
+.meal-name{
+  padding: 1.5rem 0.5rem;
+}
+.meal-name h3{
+  font-size: 1.4rem;
+}
+.recipie-btn{
+  text-decoration: none;
+  color: white;
+  background: yellow;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 170px;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  transition: all 0.4s linear;
+}
+.recipie-btn:hover{
+  background: yellow;
+}
+.meal-details{
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  background: yellow;
+  border-radius: 1rem;
+  width: 70%;
+  height: 90%;
+  overflow-y: scroll;
+  display: none;
+  padding: 2rem 0;
+  position: absolute;
+}
+.meal-details::-webkit-scrollbar{
+  background: white;
+  border-radius: 2rem;
+}
+.showRecipie{
+  display: block;
+}
+.meal-details-content p:not(.recipe-category){
+  padding: 2rem;
+}
+.meal-details-content p{
+  padding: 5rem 0;
+}
+.btn-recipie-close-btn{
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 0.9rem;
+  background: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+.recipie-title{
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+/* .recipie-category{
+  background: white;
+  font-weight: 600;
+  color: yellow;
+  display: inline-block;
+  padding: 20.rem 0.5rem;
+  border-radius: 0.3rem;
+
+} */
+.recipie-category{
+  background: white;
+  font-weight: 600;
+  color: rgb(14, 14, 10);
+  display: inline-block;
+  padding: 20.rem 0.5rem;
+  border-radius: 0.3rem;
+  
+}
+.recipie-instruct{
+  padding: 1rem 0;
+}
+.recipie-meal-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.recipie-link{
+  margin: 1.4rem 0;
+  text-align:  center;
+}
+.recipie-link a{
+  color: rgb(12, 9, 9);
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.4s linear;
+}
+.recipie-link a:hover{
+  opacity: 0.8;
+}
+.notFound{
+  grid-template-columns: 1fr!important;
+  color: rgb(12, 12, 11);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}
+@media screen and (max-width: 650px) {
+  #meal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  } 
+  .meal-img img{
+    padding: 15px;
+  }
+  
+}
+
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  #meal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .meal-img img{
+    padding: 18px;
+  }
+  .meal-item{
+    margin: 0;
+  }
+  .meal-details{
+    width: 700px;
+  }
+
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+  #meal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+ 
+}
+
+@media screen and (min-width: 993px){
+  #meal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  
+  
+  
+}
