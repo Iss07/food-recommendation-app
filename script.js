@@ -73,9 +73,22 @@ function mealRecipeModal(meal) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipie');
 }
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-      document.getElementById('loading').style.display = 'none';
-    }, 2000);
-  });
+const spinner = document.querySelector('.spinner');
+
+
+function hideSpinner() {
+  spinner.classList.add('hidden');
+}
+
+
+setTimeout(hideSpinner, 4000);
+
+const preloaderContainer = document.querySelector('.preloader-container');
+
+
+function hidePreloader() {
+  preloaderContainer.classList.add('hidden');
+}
+
+setTimeout(hidePreloader, 4000);
   
