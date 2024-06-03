@@ -3,14 +3,12 @@ const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-contents');
 const recipeCloseBtn = document.getElementById('recipie-close-btn');
 
-// event listeners
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipie');
 });
 
-// get meal list that matches with the ingredients
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInputTxt}`)
@@ -41,7 +39,6 @@ function getMealList() {
         });
 }
 
-// get recipe of the meal
 function getMealRecipe(e) {
     e.preventDefault();
     if (e.target.classList.contains('recipe-btn')) {
@@ -52,7 +49,6 @@ function getMealRecipe(e) {
     }
 }
 
-// create a modal
 function mealRecipeModal(meal) {
     console.log(meal);
     meal = meal[0];
@@ -79,8 +75,6 @@ const spinner = document.querySelector('.spinner');
 function hideSpinner() {
   spinner.classList.add('hidden');
 }
-
-
 setTimeout(hideSpinner, 4000);
 
 const preloaderContainer = document.querySelector('.preloader-container');

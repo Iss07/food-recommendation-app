@@ -22,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 250, 250, 0.5); /* Adjust opacity as needed */
+  background-color: rgba(255, 250, 250, 0.5); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,15 +261,6 @@ body {
   letter-spacing: 1px;
   padding-bottom: 1rem;
 }
-/* .recipie-category{
-  background: white;
-  font-weight: 600;
-  color: yellow;
-  display: inline-block;
-  padding: 20.rem 0.5rem;
-  border-radius: 0.3rem;
-
-} */
 .recipie-category{
   background: white;
   font-weight: 600;
@@ -357,9 +348,5 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-  }
-
-  
-  
-  
+}
 }
